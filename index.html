@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コーヒー</title>
+    <link href="TopPage.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <!-- メインコンテンツ -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="TopPage.js"></script>
+    <!-- ローディング -->
+    <div class="my-custom-loader" id="my-custom-loader">
+        <img src="img/roading.gif" alt="ローディング中">
+    </div>
+    
+    <div id="nav-wrapper" class="nav-wrapper">
+        <header>
+            <div class="container">
+                <a href="index.html">
+                    <img src="img/rogo1.png" alt="ロゴ" class="header-logo"> <!-- ロゴ画像を追加 -->
+                </a>
+                <div class="hamburger" id="js-hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+        <nav class="sp-nav">
+            <div class="close-menu" id="js-close-menu">✖</div> <!-- メニューを消すボタン -->
+            <ul>
+                <li><p>MENU</p></li>
+                <li><a href="CoffeeBeans\beans_parent.html">豆の種類</a></li>
+                <div class="content">
+                    <li><a href="CoffeeBeans\Beans_BlueMountain\contents.html">ブルーマウンテン</a></li>
+                    <li><a href="CoffeeBeans\Beans_Colombia\contents.html">コロンビア</a></li>
+                    <li><a href="CoffeeBeans\Beans_Guatemala\contents.html">グアテマラ</a></li>
+                    <li><a href="CoffeeBeans\Beans_Kilimanjaro\contents.html">キリマンジャロ</a></li>
+                    <li><a href="CoffeeBeans\Beans_Kona\contents.html">コナ</a></li>
+                </div>
+                <li><a href="CoffeeBrewTop\CoffeeBrewTop.html">淹れ方</a></li>
+                <div class="content">
+                    <li><a href="CoffeeBrewTop\Brew_Varieties\contents.html">いろいろな淹れ方</a></li>
+                    <li><a href="CoffeeBrewTop\Brew_AtHome\contents.html">お家でできる淹れ方</a></li>
+                </div>
+                <li><a href="CoffeeShopTop\CoffeeShopTop.html">カフェ</a></li>
+                <div class="content">
+                    <li><a href="CoffeeShopTop\cafe_local\contents.html">一関のカフェ</a></li>
+                    <li><a href="CoffeeShopTop\CoffeeShop_Chains\contents.html">チェーン店のコーヒー</a></li>
+                </div>
+            </ul>
+        </nav>
+        <div class="black-bg" id="js-black-bg"></div>
+    </div>
+    <ul class="slideshow">
+        <li>
+            <img src="img/Top_BeansIMG.jpg" alt="coffee-beans" class="animate__animated animate__fadeIn slideshow-image">
+            <div class="slideshow-text">どこまでも奥深い、カップ一杯の楽しみ。 </div>
+        </li>
+        <li>
+            <img src="img/Top_BrewIMG.jpg" alt="コーヒー" class="animate__animated animate__fadeIn slideshow-image">
+            <div class="slideshow-text">どこまでも奥深い、カップ一杯の楽しみ。 </div>
+        </li>
+        <li>
+            <img src="img/Top_ShopIMG.jpg" alt="こーひ" class="animate__animated animate__fadeIn slideshow-image">
+            <div class="slideshow-text">どこまでも奥深い、カップ一杯の楽しみ。 </div>
+        </li>
+        <li>
+            <img src="img/Top_top.jpg" alt="ここ" class="animate__animated animate__fadeIn slideshow-image">
+            <div class="slideshow-text">どこまでも奥深い、カップ一杯の楽しみ。 </div>
+        </li>
+    </ul>
+
+    <h1 class="top-title">コーヒーの魅力</h1>
+    <div class="js-fade">
+        <div class="top">
+            <p>
+                <span>朝、リビングでこんがり焼いた</span><span>トーストを齧って啜る、</span>
+                <br>
+                目覚めの一杯。
+                <br>
+                <span>休日の昼下がり、</span><span>カフェで甘いデザートと</span><span>一緒にいただく、</span>
+                <br>
+                ちいさな幸福の時間。
+                <br>
+                <span>またあるときは、</span><span>穏やかなマスターのいる</span><span>喫茶店で、</span>
+                <br>
+                <span>こだわりの味わいと</span><span>空間を楽しんだり。</span>
+                <br>
+                <span>世界中で広く嗜好品として</span><span>愛されるコーヒーは、</span>
+                <br>
+                <span>日常のさまざまな場面に</span><span>彩りを与えてくれます。</span>
+                <br>
+                <span>コーヒーの一つの魅力は、</span><span>やはりその多様さ。</span>
+                <br>
+                <span>産地や気候によって異なる、</span><span>コーヒー豆の種類。</span>
+                <br>
+                <span>それだけでなく、</span><span>同じ豆でも、淹れ方を変えれば</span>
+                <br>
+                <span>味わいが変わる。</span>
+                <br>
+                <span>そんな奥深いコーヒーの知識を</span><span>ちょっとだけご紹介。</span>
+                <br>
+                <span>知ればきっと、</span><span>もっとコーヒーが</span><span>楽しくなるでしょう。</span>
+                <br>
+                <span>さらに、一関にある</span><span>おすすめのカフェも紹介します。</span>  
+            </p>
+        </div>
+    </div>
+    
+    <section class="articles-section">
+        <h2 class="articles-title">コーヒー豆の種類と特徴</h2>
+        <div class="article js-fade">
+            <img src="img/Top_BeansIMG.jpg" alt="記事画像" class="article-image">
+            <div class="article-content">
+                <p class="article-description">コーヒー豆は大地の恵み。栽培地の土壌や気候、品種や精製方法によっても、まったく異なる味わいが生み出されます。
+                    ここでは、代表的なコーヒー豆の種類とその特徴をご紹介します。それぞれの香りや味の違いを感じながら飲めば、コーヒーはもっと味わい深く、おいしくなるはず。 </p>
+                <a href="CoffeeBeans/beans_parent.html" class="article-button">記事を読む</a>
+            </div>
+        </div>
+    </section>
+    <section class="articles-section">
+        <h2 class="articles-title">コーヒーの淹れ方</h2>
+        <div class="article js-fade">
+            <img src="img/Top_BrewIMG.jpg" alt="記事画像" class="article-image">
+            <div class="article-content">
+                <p class="article-description">さらにコーヒーを奥深くしているのが、その淹れ方。同じ豆を使っていても、淹れ方を変えるだけでまた違った風味を出してくれます。
+                    サイフォンやフレンチプレスなど、それぞれ特徴の異なる淹れ方に加え、お家でできるハンドドリップのおいしいやり方もご紹介します </p>
+                <a href="CoffeeBrewTop\CoffeeBrewTop.html" class="article-button">記事を読む</a>
+            </div>
+        </div>
+    </section>
+    <section class="articles-section">
+        <h2 class="articles-title">お店の紹介</h2>
+        <div class="article js-fade">
+            <img src="img/Top_ShopIMG.jpg" alt="記事画像" class="article-image">
+            <div class="article-content">
+                <p class="article-description">手軽においしいコーヒーを飲むなら、やっぱりお店で飲むのがいちばん。特にカフェに行けば、独自の雰囲気やこだわりのコーヒー、そしてその場所ならではの味わいが、日常のコーヒータイムをもっと特別なものにしてくれます。
+                    もちろん一関にも、個性豊かな沢山のカフェが。ここでは一関のカフェ2件のほか、お近くのチェーン店で飲めるコーヒーについてもご紹介します。 </p>
+                <a href="CoffeeShopTop\CoffeeShopTop.html" class="article-button">記事を読む</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+        <h2>参考文献</h2>
+        <ul>
+            <li><a href="https://www.ucc.co.jp/enjoy/brew/" target="_blank">おいしいコーヒーの淹れ方|知る・楽しむ(UCC上島珈琲　最終訪問日2025/1/23)</a></li>
+            <li><a href="https://www.keycoffee.co.jp/shallwedrip/category/coffeeknowledge/" target="_blank">ドリップしよう。- Shall we drip? - | キーコーヒー株式会社(キーコーヒー　最終訪問日2025/1/23)</a></li>
+            <li><a href="https://coffee-labo.co.jp/" target="_blank">コーヒー豆研究所 | 国内最大級のコーヒー情報サイト(コーヒー豆研究所　最終訪問日2025/1/23)</a></li>
+        </ul>
+    </div>
+    <style>
+    .footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+    
+    .footer li{
+        list-style: none;
+    }
+    </style>
+
+</body>
+</html>
