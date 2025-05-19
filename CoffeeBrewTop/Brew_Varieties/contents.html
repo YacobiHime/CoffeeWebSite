@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豆の種類</title>
+
+<link href= "contents_text.css" rel = "stylesheet" type = "text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <!-- メインコンテンツ -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="coffee_script.js"></script>
+    <!-- ローディングアニメーション -->
+    <div class="my-custom-loader" id="my-custom-loader">
+        <img src="img/roading.gif" alt="ローディング中">
+    </div>
+    
+    <div id="nav-wrapper" class="nav-wrapper">
+        <header>
+            <div class="container">
+                <a href="../../index.html">
+                    <img src="img/rogo1.png" alt="ロゴ" class="header-logo"> <!-- ロゴ画像を追加 -->
+                </a>
+                <div class ="hamburger" id="js-hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+        <div id="logo">
+            <p>HOW TO BREW</p>
+        </div>
+
+        <div class="container">
+            <div class="heading">
+                <h1>過程も楽しむ、コーヒーの淹れ方8つ</h1>
+            </div>
+            <br>
+            <div class="text_content">
+                　コーヒーはその淹れ方もさまざま。ていねいに手作業で、または多彩な器具を使って、あるいはコーヒーマシンでさっと手軽に...。どう淹れるかによって味や香りの特徴が変化するだけでなく、淹れる過程を見たり体験したりするのも楽しいものです。ここでは、知るだけでおもしろいコーヒーの淹れ方を8つ簡単にご紹介します。 
+            </div>
+            <div class="table">
+                <ul>
+                    <h2>☆　目次(クリックしてスクロール)</h2>
+                    <li><a href="#topic1">1.ハンドドリップ </a></li>
+                    <li><a href="#topic2">2.フレンチプレス </a></li>
+                    <li><a href="#topic3">3.エスプレッソ </a></li>
+                    <li><a href="#topic4">4.サイフォン  </a></li>
+                    <li><a href="#topic5">5.エアロプレス </a></li>
+                    <li><a href="#topic6">6.コーヒーメーカー </a></li>
+                    <li><a href="#topic7">7.水出しコーヒー(ダッチコーヒー) </a></li>
+                </ul>
+            </div>
+        
+            <div class="main">
+                <h4 id="topic1">ジャンプ先</h4>
+                <div class="main_topic">
+                    <h1>1.ハンドドリップ</h1>
+                </div>
+                <div class="js-fade">
+                    <img src="img/Varieties/handdrip.jpg" alt="ハンドドリップ"height="400" width="600">
+                    <p class="text_content">
+                        　最も手軽で、かつ最も奥深いのがハンドドリップでしょう。カップにドリッパーをセットし、フィルターに入ったコーヒーの粉にケトルからお湯を注ぐだけ。フィルターには紙を使うペーパードリップと、布を使うネルドリップがあります。特殊な器具を使わずすべて手作業で行うぶん、淹れる人の技術によってかなり味が左右されるのが特徴です。喫茶店のように上手に淹れるのは難しいですが、自分の技術で味が決まるのはすごく面白いポイントですよ。 
+                        <br>
+                        　高価な機械や器具は要らないので、はじめて自宅でコーヒーを淹れるのには一番おすすめ。具体的なやり方は当サイトで紹介しています:<br>
+                    </p>
+                    <a href="../Brew_AtHome/contents.html">
+                        <section class="articles-section">
+                            <div class="article js-fade">
+                                <img src="img/AtHomeIMG.jpg" alt="記事画像" class="article-image">
+                                <div class="article-content">
+                                    <h3 class="Topminihed">お家でできる淹れ方</h3>
+                                    <p class="article-description"><span>お家でコーヒーを淹れるなら、</span><span>まずはやっぱり</span><span>ハンドドリップをおすすめします。</span><span>ハンドドリップは</span>
+                                        <span>用意する器具も少なく手軽ですが、</span><span>かつ奥が深く自分好みのやり方を</span><span>見つけることもできます。</span><span>そんなハンドドリップの</span><span>最も基本的なやり方をご紹介します。 </span>
+                                    </p>
+                                </div>
+                            </div>
+                        </section>
+                    </a>
+                </div>
+
+                <h4 id="topic2">ジャンプ先</h4>
+                <div class="main_topic">
+                    <h1>2.フレンチプレス</h1>
+                </div>
+                <div class="js-fade">
+                    <img src="img/Varieties/frenchpress.jpg" alt="フレンチプレス"height="400" width="600">
+                    <p class="text_content">
+                        　“フレンチプレス”というのは抽出に使う器具の名前です。蓋部分にフィルターのついたポットのような形をしたこの器具の中で、コーヒーの粉とお湯を直接混ぜて待つことでコーヒーを抽出します。最後に蓋についているフィルターを押し下げれば、粉だけが下に移動し美味しいコーヒーができあがるという仕組み。粉がお湯に長く浸かるので、豆は粗挽きが適しています。 
+                        <br>
+                        　抽出の際にフィルターを通さないので、コーヒーのうまみがすべて出るのがいいところ。手順も入れて待つだけなので簡単で、入門にもおすすめできます。                     
+                    </p>
+                </div>
+                
+                <h4 id="topic3">ジャンプ先</h4>
+                <div class="main_topic">
+                    <h1>3.エスプレッソ</h1>
+                </div>
+                <div class="js-fade">
+                    <img src="img/Varieties/espresso.jpg" alt="エスプレッソ"height="400" width="600">
+                    <p class="text_content">
+                        　エスプレッソマシンという機械を使ったやり方です。もともとイタリアで生まれ好まれていましたが、今は世界中で飲まれるようになっているそうです。エスプレッソは極細引きのコーヒー粉に圧力をかけ、金属のフィルターで短時間で抽出するのが特徴です。 
+                        <br>
+                        　一杯は少量なのですが、圧力をかけて抽出されるので、非常に濃厚なコーヒーが出来上がります。おいしさがぎゅっと凝縮されているような感じですね。よく聞く「カプチーノ」や「カフェラテ」は、このエスプレッソで作ったコーヒーにミルクなどを加えて作られていたりします。
+                    </p>
+                </div>
+
+                <h4 id="topic4">ジャンプ先</h4>
+                <div class="main_topic">
+                    <h1>4.サイフォン</h1>
+                </div>
+                <div class="js-fade">
+                    <img src="img/Varieties/cyphon.jpg" alt="サイフォン"height="400" width="600">
+                    <p class="text_content">
+                        　見た目の美しさから、特に喫茶店などで人気がある淹れ方です。サイフォンは下のフラスコと上のろうと部分に分かれ、管で上下がつながっている不思議な形をしています。理科の実験器具を思わせるような見た目のこの器具ですが、抽出にはまさに物理の気圧のしくみを使っているんです。具体的には、フラスコ部分には水が、上のろうとの部分には粉がセットされます。そしてフラスコを温め水が沸騰すると、内圧が上昇して管を通ってお湯が上に移動し、上で粉に触れてコーヒー液が作られます。最後に温度が下がるとコーヒーが管を通ってフラスコに戻り、おいしいコーヒーのできあがりになります。
+                        <br>
+                        　サイフォンで淹れたコーヒーはドリップに比べて口当たりがまろやかで、すっきりとした後味になるのが特徴です。
+                    </p>
+                </div>
+
+                <h4 id="topic5">ジャンプ先</h4>
+                <div class="main_topic">
+                    <h1>5.エアロプレス</h1>
+                </div>
+                <div class="js-fade">
+                    <img src="img/Varieties/aeropress.jpg" alt="エアロプレス"height="400" width="600">
+                    <p class="text_content">
+                        　エアロプレスはその名の通り、空気圧を使って抽出を行う淹れ方です。空気圧といってもエスプレッソのようにマシンを使うのではなく、容器についたピストン(プランジャー)を手で押し込むことで圧力をかけます。比較的新しく考案された淹れ方ですが、器具が軽量でスピーディーに淹れられるため、アウトドアなどでも幅広く人気があります。
+                        <br>
+                        　素早く抽出が行われるので雑味が出にくく、安定したおいしさのコーヒーが淹れられるのが特徴です。
+                    </p>
+                </div>
+
+                <h4 id="topic6">ジャンプ先</h4>
+                <div class="main_topic">
+                    <h1>6.コーヒーメーカー</h1>
+                </div>
+                <div class="js-fade">
+                    <img src="img/Varieties/CoffeeMachine.jpg" alt="コーヒーメーカー"height="400" width="600">
+                    <p class="text_content">
+                        器具を使って自分の手でコーヒーを淹れるのも良いですが、忙しい日にはコーヒーメーカーに任せることでもおいしいコーヒーが飲めます。粉と水をセットしておけば、ボタンを押すだけで本格的なコーヒーを飲むことができます。豆を挽くところから全自動で行ってくれるタイプなら、いつでも手軽に挽きたてでコーヒーを楽しめるのは贅沢ですね。
+                    </p>
+                </div>
+
+                <h4 id="topic7">ジャンプ先</h4>
+                <div class="main_topic">
+                    <h1>7.水出しコーヒー</h1>
+                </div>
+                <div class="js-fade">
+                    <img src="img/Varieties/mizudashiCoffee.jpg" alt="水出しコーヒー"height="400" width="600">
+                    <p class="text_content">
+                        　他の淹れ方とひと味違うのがこの水出しコーヒー。かっこよく「コールドブリュー」とも呼ばれます。時間はかかりますが冷たいとても美味しいコーヒーができますし、コーヒーの面白さがよくわかる淹れ方です。 
+                        <br>
+                        　ドリップしたコーヒーを冷やせば、もちろんアイスコーヒーができますね。しかしこの水出しコーヒーはそれとはまったく違います。ポイントは、”抽出が低温で行われる”こと。ドリップは抽出が熱湯で行われますが、この場合豆の成分・油分が多く溶け出し、良くも悪くもコーヒー本来の味が際立つようになります。逆に水出しで低温で抽出すると、苦味や渋みといったクセがまろやかになり、飲みやすくクリアな味になるのです。市販のペットボトルのコーヒーでもよく「コールドブリュー」と書いているものがあります。普段はコーヒーを好まない人も、飲んでみればその飲みやすさに驚くと思いますよ。</p>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="sp-nav">
+            <div class="close-menu" id="js-close-menu">✖</div> <!-- メニューを消すボタン -->
+            <ul>
+                <li><p>MENU</p></li>
+                <li><a href="../../CoffeeBeans/beans_parent.html">豆の種類</a></li>
+                <div class="content">
+                    <li><a href="../../CoffeeBeans/Beans_BlueMountain/contents.html">ブルーマウンテン</a></li>
+                    <li><a href="../../CoffeeBeans/Beans_Colombia/contents.html">コロンビア</a></li>
+                    <li><a href="../../CoffeeBeans/Beans_Guatemala/contents.html">グアテマラ</a></li>
+                    <li><a href="../../CoffeeBeans/Beans_Kilimanjaro/contents.html">キリマンジャロ</a></li>
+                    <li><a href="../../CoffeeBeans/Beans_Kona/contents.html">コナ</a></li>
+                </div>
+                <li><a href="../../CoffeeBrewTop/CoffeeBrewTop.html">淹れ方</a></li>
+                <div class="content">
+                    <li><a href="../../CoffeeBrewTop/Brew_Varieties/contents.html">いろいろな淹れ方</a></li>
+                    <li><a href="../../CoffeeBrewTop/Brew_AtHome/contents.html">お家でできる淹れ方</a></li>
+                </div>
+                <li><a href="../../CoffeeShopTop/CoffeeShopTop.html">カフェ</a></li>
+                <div class="content">
+                    <li><a href="../../CoffeeShopTop/cafe_local/contents.html">一関のカフェ</a></li>
+                    <li><a href="../../CoffeeShopTop/CoffeeShop_Chains/contents.html">チェーン店のコーヒー</a></li>
+                </div>
+            </ul>
+        </nav>
+    <div class="black-bg" id="js-black-bg"></div>
+    </div>
+
+    <div class="footer">
+        <h2>参考文献</h2>
+        <ul>
+            <li><a href="https://www.ucc.co.jp/enjoy/brew/" target="_blank">おいしいコーヒーの淹れ方|知る・楽しむ(UCC上島珈琲　最終訪問日2025/1/23)</a></li>
+            <li><a href="https://www.keycoffee.co.jp/shallwedrip/category/coffeeknowledge/" target="_blank">ドリップしよう。- Shall we drip? - | キーコーヒー株式会社(キーコーヒー　最終訪問日2025/1/23)</a></li>
+            <li><a href="https://coffee-labo.co.jp/" target="_blank">コーヒー豆研究所 | 国内最大級のコーヒー情報サイト(コーヒー豆研究所　最終訪問日2025/1/23)</a></li>
+        </ul>
+    </div>
+    <style>
+    .footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+    
+    .footer li{
+        list-style: none;
+    }
+    </style>
+
+</body>
+</html>
+

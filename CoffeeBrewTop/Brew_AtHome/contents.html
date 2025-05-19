@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豆の種類</title>
+
+<link href= "contents_text.css" rel = "stylesheet" type = "text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <!-- メインコンテンツ -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="coffee_script.js"></script>
+    <!-- ローディングアニメーション -->
+    <div class="my-custom-loader" id="my-custom-loader">
+        <img src="img/roading.gif" alt="ローディング中">
+    </div>
+    
+    <div id="nav-wrapper" class="nav-wrapper">
+        <header>
+            <div class="container">
+                <a href="../../index.html">
+                    <img src="img/rogo1.png" alt="ロゴ" class="header-logo"> <!-- ロゴ画像を追加 -->
+                </a>
+                <div class ="hamburger" id="js-hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+        <div id="logo">
+            <p>HOW TO BREW</p>
+        </div>
+
+        <div class="container">
+            <div class="heading"><!--見出しに使うクラス（左横に茶色の線が入る）-->
+                <h1>お家で淹れる、きほんのハンドドリップ</h1>
+            </div>
+            <div class="text_content"><!--テキストのクラス左寄せで表示-->
+                    　お家でコーヒーを淹れるなら、まずはやっぱりハンドドリップをおすすめします。ハンドドリップは用意する器具も少なく手軽ですが、かつ奥が深く自分好みのやり方を見つけることもできます。ドリップ中に漂うコーヒーの香りを感じれば、これから飲むコーヒーへの期待感も高まり、もっと味わい深くなること間違いなし。はじめてコーヒーの楽しみに触れるにはもってこいの淹れ方です。そんなハンドドリップの最も基本的なやり方をご紹介します。<br>
+                <div class="list">
+                    <ul>
+                        <h2>用意するもの</h2>
+                        <li>コーヒー豆</li>
+                        <li>水(お湯)</li>
+                        <li>コーヒーミル<p>(↑豆が粉なら必要なし)</p></li>
+                        <li>メジャースプーン(または秤)</li>
+                        <li>ドリップポット(注ぎやすい細口のもの)</li>
+                        <li>ドリッパー</li>
+                        <li>ペーパーフィルター</li>
+                        <li>サーバー</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="text_content">
+                　コーヒー豆は、はじめてならスーパーで、UCCなどのリーズナブルなものを買いましょう。ミルをお持ちなら豆、なければ粉の状態のものを用意してください。 
+                <br>
+                　ドリップの際お湯を注ぐために使うドリップポットはなるべく細口のものが好ましいです。やかんなど注ぎ口が大きいものだと、ドリップがしづらくなってしまいます。 
+                <br>
+                　ドリッパーはドリップされたコーヒーが溜まる容器です。あったほうが良いですが、なければコーヒーカップに直接ドリッパーを乗せても構いません。 
+            </div>
+        
+            <div class="main">
+                <h4 id="topic1">ジャンプ先</h4>
+                <div class="heading">
+                    <h1>下準備</h1>
+                </div>
+                <div class="js-fade">
+                    <img src="img/AtHome/sitajunbi.jpg" alt="下準備"height="400" width="600">
+                    <div class="text_content">
+                        <h3>・お湯を沸かす</h3>
+                        　お湯の温度は沸騰直後から少し置いた95℃前後が良いとされています。豆を挽くなどのほかの準備をする前に火にかけておきましょう。 <br>
+                        <h3>・計量する</h3>
+                        　豆とお湯を量ります。ここを丁寧にすることがおいしく作る重要なポイントです。とは言っても、分量のバランスは実は本当にさまざまです。調べてもこれといった決まった分量はありません。ですのでここでは例として、当サイトの記事担当が実際に淹れておいしかった分量の<b><u>豆15g:お湯170g</u></b>とします。(※水ではなく沸かした後のお湯で量ることに注意！)飲んでみて濃いと感じればお湯を増やすか豆を減らし、薄ければその逆に調整して、好みの分量を見つけてみてください。 <br>
+                        <h3>・豆を挽く</h3>
+                        　計量した豆をミルで挽き粉にします。ミルによりますが、たいていはねじを回すことで細かさを調整できます。とりあえずは調整せずそのまま挽いてみれば良いでしょう。そこから粗ければ酸味が、細かければ苦味が出やすくなると簡単に覚えてください。  <br>
+                    </div>
+                </div>
+
+                <h4 id="topic2">ジャンプ先</h4>
+                <div class="heading">
+                    <h1>手順１:器具と粉をセット </h1>
+                </div>
+                <div class="js-fade">
+                    <img src="img/AtHome/step1.jpg" alt="step1"height="400" width="600">
+                    <div class="text_content">
+                        サーバーの上にドリッパーを置き、ドリッパーにフィルターをセットします。そこに挽いたコーヒー豆を入れ、軽くゆすって平らにならします。 <br>
+                    </div>
+                </div>
+
+                <h4 id="topic3">ジャンプ先</h4>
+                <div class="heading">
+                    <h1>手順2:粉を蒸らす </h1>
+                </div>
+                <div class="js-fade">
+                    <img src="img/AtHome/step2.jpg" alt="step2"height="400" width="600">
+                    <div class="text_content">
+                        　いよいよドリップポットに入れたお湯を注いでいきます。まずは粉を”蒸らす”作業です。中心から「の」の字を書くようにひと回しだけ注いで、全体がまんべんなく濡れるようにしましょう。お湯を注ぐとき、フィルターにお湯が触れると風味が薄くなってしまうので気をつけてください。その後、このまま20秒ほど待ちます。 <br>
+                        　蒸らすことで豆の中に残っている炭酸ガスが抜け、この後お湯を注いだ時により成分が抽出されやすくなります。<br>
+                    </div>
+                </div>
+
+                <h4 id="topic4">ジャンプ先</h4>
+                <div class="heading">
+                    <h1>手順3:コーヒーを抽出する </h1>
+                </div>
+                <div class="js-fade">
+                    <img src="img/AtHome/step3.jpg" alt="キリマンジャロ"height="400" width="600">
+                    <div class="text_content">
+                        　20秒経過したら、同様に「の」の字を描くようにして注いでいきます。このとき、平らにならした表面を荒らさないよう低い位置から優しく注いでください。うまくできていれば、お湯を注ぐと粉全体がぽっこりと蒸気で膨らんでいきます。この状態になることでお湯がまんべんなく粉に触れ、成分がよく抽出されます。一度に注ぎすぎるとこれが崩れてしまうので、崩れない程度に注ぎ、ふくらみがしぼんできたらまた注ぐことを数回繰り返して、お湯をすべて注ぎきります。 <br>
+                        ※膨らんだ粉の中で抽出し続けることで、お湯がフィルターの紙に触れないようにすることができます。 <br>
+                    </div>
+                </div>]
+
+                <h4 id="topic5">ジャンプ先</h4>
+                <div class="heading">
+                    <h1>手順4:ドリッパーを外す </h1>
+                </div>
+                <div class="js-fade">
+                    <img src="img/AtHome/step4.jpg" alt="キリマンジャロ"height="400" width="600" justify-content="center">
+                    <div class="text_content">
+                        　注いだお湯がすべて落ちきるのを待たずに、少し残してサーバーからドリッパーを外します。サーバーに入った抽出直後のコーヒーは上と下で濃度に差があるので、かるく混ぜれれば均等になります。 <br>
+                        ※上に残った泡は雑味のもとになります。落とし切らないようにしましょう。 <br>
+                    </div>
+                </div>
+
+                <h4 id="topic6">ジャンプ先</h4>
+                <div class="heading">
+                    <h1>できあがり！ </h1>
+                </div>
+                <div class="js-fade">
+                    <img src="img/AtHome/complete.jpg" alt="キリマンジャロ"height="400" width="600">
+                    <div class="text_content">
+                        　サーバーからコーヒーカップに注ぎ、できたてのコーヒーを楽しんでください。手間をかけて作ったコーヒーは、缶コーヒーを飲むよりもずっと味わい深いもののはずです。 <br>
+                        　また、ハンドドリップは手作業ですから、淹れるたびに少し味わいが変わるのがわかると思います。「今日は上手に淹れられたな」「次はもうちょっと濃い方がいいかな...」なんてコーヒーの味に一喜一憂するのも楽しみのひとつですよ。 <br>
+                    </div>
+                </div>
+
+                <div class="js-fade">
+                    <div class="suggest">
+                        こちらもおすすめ:
+                    </div>
+                </div>
+    
+                <a href="../Brew_Varieties/contents.html">
+                    <section class="articles-section">
+                        <div class="article js-fade">
+                            <img src="img/VarietiesIMG.jpg" alt="記事画像" class="article-image">
+                            <div class="article-content">
+                                <h3 class="Topminihed">いろいろな淹れ方</h3>
+                                <p class="article-description"><span>コーヒーはその淹れ方もさまざま。</span><span>ていねいに手作業で、</span><span>または多彩な器具を使って、</span><span>あるいはコーヒーマシンで</span>
+                                    <span>さっと手軽に...。</span><span>どう淹れるかによって</span><span>味や香りの特徴が</span><span>変化するだけでなく、</span><span>淹れる過程を見たり</span>
+                                    <span>体験したりするのも</span><span>楽しいものです。</span><span>ここでは、知るだけでおもしろい</span><span>コーヒーの淹れ方を</span><span>8つ簡単にご紹介します。 </span>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </a>
+                <br>
+            </div>
+
+
+        </div>
+        
+    <nav class="sp-nav">
+        <div class="close-menu" id="js-close-menu">✖</div> <!-- メニューを消すボタン -->
+        <ul>
+            <li><p>MENU</p></li>
+            <li><a href="../../CoffeeBeans/beans_parent.html">豆の種類</a></li>
+            <div class="content">
+                <li><a href="../../CoffeeBeans/Beans_BlueMountain/contents.html">ブルーマウンテン</a></li>
+                <li><a href="../../CoffeeBeans/Beans_Colombia/contents.html">コロンビア</a></li>
+                <li><a href="../../CoffeeBeans/Beans_Guatemala/contents.html">グアテマラ</a></li>
+                <li><a href="../../CoffeeBeans/Beans_Kilimanjaro/contents.html">キリマンジャロ</a></li>
+                <li><a href="../../CoffeeBeans/Beans_Kona/contents.html">コナ</a></li>
+            </div>
+            <li><a href="../../CoffeeBrewTop/CoffeeBrewTop.html">淹れ方</a></li>
+            <div class="content">
+                <li><a href="../../CoffeeBrewTop/Brew_Varieties/contents.html">いろいろな淹れ方</a></li>
+                <li><a href="../../CoffeeBrewTop/Brew_AtHome/contents.html">お家でできる淹れ方</a></li>
+            </div>
+            <li><a href="../../CoffeeShopTop/CoffeeShopTop.html">カフェ</a></li>
+            <div class="content">
+                <li><a href="../../CoffeeShopTop/cafe_local/contents.html">一関のカフェ</a></li>
+                <li><a href="../../CoffeeShopTop/CoffeeShop_Chains/contents.html">チェーン店のコーヒー</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="black-bg" id="js-black-bg"></div>
+    </div>
+
+    <div class="footer">
+        <h2>参考文献</h2>
+        <ul>
+            <li><a href="https://www.ucc.co.jp/enjoy/brew/" target="_blank">おいしいコーヒーの淹れ方|知る・楽しむ(UCC上島珈琲　最終訪問日2025/1/23)</a></li>
+            <li><a href="https://www.keycoffee.co.jp/shallwedrip/category/coffeeknowledge/" target="_blank">ドリップしよう。- Shall we drip? - | キーコーヒー株式会社(キーコーヒー　最終訪問日2025/1/23)</a></li>
+            <li><a href="https://coffee-labo.co.jp/" target="_blank">コーヒー豆研究所 | 国内最大級のコーヒー情報サイト(コーヒー豆研究所　最終訪問日2025/1/23)</a></li>
+        </ul>
+    </div>
+    <style>
+    .footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+    
+    .footer li{
+        list-style: none;
+    }
+    </style>
+
+</body>
+</html>
+
