@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豆の種類</title>
+
+<link href= "contents_text.css" rel = "stylesheet" type = "text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <!-- メインコンテンツ -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="coffee_script.js"></script>
+    <!-- ローディングアニメーション -->
+    <div class="my-custom-loader" id="my-custom-loader">
+        <img src="img/roading.gif" alt="ローディング中">
+    </div>
+    
+    <div id="nav-wrapper" class="nav-wrapper">
+        <header>
+            <div class="container">
+                <a href="../../index.html">
+                    <img src="img/rogo1.png" alt="ロゴ" class="header-logo"> <!-- ロゴ画像を追加 -->
+                </a>
+                <div class ="hamburger" id="js-hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+        <div id="logo">
+            <p>HOW TO BREW</p>
+        </div>
+
+        <div class="container">
+            <div class="heading">
+                <h1>チェーン店のコーヒー</h1>
+            </div>
+            <br>
+            <div class="text_content">
+                　美味しいコーヒーを飲むなら喫茶店が一番ですが、最近はコーヒーショップでないチェーン店でもコーヒーに力を入れているところは多く、おおよそ100円台で手軽に高品質なコーヒーを楽しめます。ここでは、一関で行きやすいコンビニ3社とマクドナルドのコーヒーについてご紹介します。 <br>
+            </div>
+            <div class="table">
+                <ul>
+                    <h2>☆　目次(クリックしてスクロール)</h2>
+                    <li><a href="#topic1">1.ローソン　コーヒー(S) 130円 </a></li>
+                    <li><a href="#topic2">2.セブンイレブン　ホットコーヒーR 112円+税 </a></li>
+                    <li><a href="#topic3">3.ファミリーマート　ブレンドS 112円+税 </a></li>
+                    <li><a href="#topic4">4.マクドナルド</a></li>
+                </ul>
+            </div>
+        
+            <div class="main">
+                <div class="main_topic">
+                    <h1>コンビニチェーン3社</h1>
+                </div>
+                <div class="js-fade">
+                    <img src="img/chainscoffeeIMG.jpg" alt="コンビニ"height="400" width="600">
+                    <div style="text-align: center;">※画像はイメージです</div>
+                    <div class="text_content">
+                        <h2 id="topic1">ローソン</h2>
+                        <h3>　コーヒー(S) 130円 </h3>
+                        　ローソンのコーヒーブランド「MACHI cafe」のコーヒーは、エスプレッソマシンで抽出されるのが特徴。豆について詳細は見つけられませんでしたが、4か国の指定農園で栽培されたアラビカ種のブレンドを使用しているとのこと。マシンで薄め・ふつう・濃いめを選べるのがうれしいポイントです。
+                    </div>
+
+                    <div class="text_content">
+                        <h2 id="topic2">セブンイレブン</h2>
+                        <h3>　ホットコーヒーR 112円+税 </h3>
+                        　セブンのコーヒーブランド「SEVEN CAFE」は、コンビニチェーンの中でもかなりコーヒーに力を入れています。とにかく焙煎やブレンド、抽出のすべてにおいてこだわりが強く、同じホットコーヒーでもマシンで選べる軽め・ふつう・濃いめのそれぞれで違うブレンド・焙煎・抽出方法を行っているそうです。 
+                    </div>
+
+                    <div class="text_content">
+                        <h2 id="topic3">ファミリーマート</h2>
+                        <h3>　ブレンドS 112円+税 </h3>
+                        　ファミリーマートのコーヒーブランド「FAMIMA CAFE」では、世界一のバリスタと共同開発したこだわりのコーヒーを販売しています。「ブレンド」に使用されているのは、ブラジル産の厳選された最高等級豆をはじめとするオリジナルブレンドの豆。味わいとしては「甘み」と「コク深さ」が特徴とされています。
+                    </div>
+                </div>
+
+                <div class="main_topic">
+                    <h1 id="topic4">マクドナルドのコーヒー</h1>
+                </div>
+                <div class="js-fade">
+                    <img src="img/ChainsCoffee.jpg" alt="マクドナルド"height="400" width="600">
+                    <div style="text-align: center;">※画像はイメージです</div>
+                    <div class="text_content">
+                        <h3>　プレミアムローストコーヒーS 120円 </h3>
+                        　マクドナルドのコーヒーはファストフード店としては非常にレベルが高く、マクドナルドがスタートして以来数年ごとにリニューアルを重ねられてきたこだわりのコーヒーです。改良の一つとして、香りを楽しんでもらうために飲み口を数mm広げるなど、その細かさから本気度が伺えます。その味わいについて、公式から”ガツンと力強いコクとクリアなキレ”（引用）と説明されています。 
+                    </div>
+                </div>
+
+                <br><br>
+
+                <div class="js-fade">
+                    <div class="suggest">
+                        <h3>こちらもおすすめ:</h3>
+                    </div>
+                </div>
+    
+                <a href="../cafe_local/contents.html">
+                    <section class="articles-section">
+                        <div class="article js-fade">
+                            <img src="img/cafeIMG.jpg" alt="記事画像" class="article-image">
+                            <div class="article-content">
+                                <h3 class="Topminihed">一関のカフェ</h3>
+                                <p class="article-description">
+                                    <span>もちろん一関でも、</span><span>喫茶店でおいしいコーヒーを</span><span>飲むことができます。</span>
+                                    <span>特に駅周辺は</span><span>ホットスポットで、</span><span>評価の高い数多くの</span><span>カフェが存在しています。</span>
+                                    <span>その中から、</span><span>記事担当が実際に行ってみた</span><span>2件をご紹介します。</span>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                </a>
+
+            </div>
+        </div>
+        
+        <nav class="sp-nav">
+            <div class="close-menu" id="js-close-menu">✖</div> <!-- メニューを消すボタン -->
+            <ul>
+                <li><p>MENU</p></li>
+                <li><a href="../../CoffeeBeans/beans_parent.html">豆の種類</a></li>
+                <div class="content">
+                    <li><a href="../../CoffeeBeans/Beans_BlueMountain/contents.html">ブルーマウンテン</a></li>
+                    <li><a href="../../CoffeeBeans/Beans_Colombia/contents.html">コロンビア</a></li>
+                    <li><a href="../../CoffeeBeans/Beans_Guatemala/contents.html">グアテマラ</a></li>
+                    <li><a href="../../CoffeeBeans/Beans_Kilimanjaro/contents.html">キリマンジャロ</a></li>
+                    <li><a href="../../CoffeeBeans/Beans_Kona/contents.html">コナ</a></li>
+                </div>
+                <li><a href="../../CoffeeBrewTop/CoffeeBrewTop.html">淹れ方</a></li>
+                <div class="content">
+                    <li><a href="../../CoffeeBrewTop/Brew_Varieties/contents.html">いろいろな淹れ方</a></li>
+                    <li><a href="../../CoffeeBrewTop/Brew_AtHome/contents.html">お家でできる淹れ方</a></li>
+                </div>
+                <li><a href="../../CoffeeShopTop/CoffeeShopTop.html">カフェ</a></li>
+                <div class="content">
+                    <li><a href="../../CoffeeShopTop/cafe_local/contents.html">一関のカフェ</a></li>
+                    <li><a href="../../CoffeeShopTop/CoffeeShop_Chains/contents.html">チェーン店のコーヒー</a></li>
+                </div>
+            </ul>
+        </nav>
+    <div class="black-bg" id="js-black-bg"></div>
+    </div>
+
+    <div class="footer">
+        <h2>参考文献</h2>
+        <ul>
+            <li><a href="https://www.ucc.co.jp/enjoy/brew/" target="_blank">おいしいコーヒーの淹れ方|知る・楽しむ(UCC上島珈琲　最終訪問日2025/1/23)</a></li>
+            <li><a href="https://www.keycoffee.co.jp/shallwedrip/category/coffeeknowledge/" target="_blank">ドリップしよう。- Shall we drip? - | キーコーヒー株式会社(キーコーヒー　最終訪問日2025/1/23)</a></li>
+            <li><a href="https://coffee-labo.co.jp/" target="_blank">コーヒー豆研究所 | 国内最大級のコーヒー情報サイト(コーヒー豆研究所　最終訪問日2025/1/23)</a></li>
+        </ul>
+    </div>
+    <style>
+    .footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+    
+    .footer li{
+        list-style: none;
+    }
+    </style>
+
+</body>
+</html>
+
