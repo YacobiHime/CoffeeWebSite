@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>豆の種類</title>
+
+<link href= "contents_text.css" rel = "stylesheet" type = "text/css">
+<link href= "slidebar.css" rel = "stylesheet" type = "text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+    <!-- メインコンテンツ -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="coffee_script.js"></script>
+    <!-- ローディングアニメーション -->
+    <div class="my-custom-loader" id="my-custom-loader">
+        <img src="img/roading.gif" alt="ローディング中">
+    </div>
+    
+    <div id="nav-wrapper" class="nav-wrapper">
+        <header>
+            <div class="container">
+                <a href="../../index.html">
+                    <img src="img/rogo1.png" alt="ロゴ" class="header-logo"> <!-- ロゴ画像を追加 -->
+                </a>
+                <div class ="hamburger" id="js-hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </header>
+        <div id="logo">
+            <p>COFFEE BEANS</p>
+        </div>
+
+        <div class="container">
+            <div class="heading">
+                <h1>ブルーマウンテン</h1>
+            </div>
+            <br>
+            <div class="text_content">
+                　「コーヒーの王様」と呼ばれるブルーマウンテン。すべてのコーヒーの良さを併せ持つとも言われるほど調和のとれたそのコーヒー豆は、カリブ海に浮かぶ島国ジャマイカで栽培されています。ここでは、ブルーマウンテンの産地や歴史、味わいについて紹介します。 <br>
+                <div class="table">
+                    <ul>
+                        <h2>☆　目次(クリックしてスクロール)</h2>
+                        <li><a href="#topic1">1.ブルーマウンテンとは？ </a></li>
+                        <li><a href="#topic2">2.ブルーマウンテンの産地と歴史 </a></li>
+                        <li><a href="#topic3">3.ブルーマウンテンの味わい</a></li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="main">
+                <div class="main_topic">
+                    <h1 id="topic1" >ブルーマウンテンとは？</h1>
+                </div>
+                <div class="js-fade">
+                    <img src="img/BlueMountain.jpg" alt="ブルーマウンテン"height="400" width="600">
+                    <div class="text_content">
+                        　ブルーマウンテンは、カリブ海の島国ジャマイカのブルーマウンテン山脈で栽培されるコーヒー豆です。ここで栽培されるコーヒー豆のうち、標高が800m~1200mの特定の地域で栽培され、厳密な検査を受けたものだけをブルーマウンテンと呼ぶことができ、世界でも高級な豆として知られています。また、ほかのコーヒー豆は麻袋で輸送されるのに対し、ブルーマウンテンは樽に入れて運ばれます。これによって鮮度や高い香りが保たれているというのも、ユニークな特徴の一つです。<br>
+                        　実は特に日本で非常に人気な銘柄で、なんとジャマイカで生産されるブルーマウンテンのうち8割は日本に輸出されているそう。  
+                    </div>
+                </div>
+
+                <div class="main_topic">
+                    <h1 id="topic2" >ブルーマウンテンの産地と歴史</h1>
+                </div>
+                <div class="js-fade">
+                    <div class="text_content">
+                        　ブルーマウンテンの栽培されている地域は「ブルーマウンテンエリア」とも呼ばれ、昼夜の激しい寒暖差や斜面による水はけのよさ、弱酸性の土壌、さらには自然発生する霧による水分の循環がコーヒー豆の生産に非常に最適な環境となっています。恵まれた環境から生み出されるコーヒー豆は高品質で、豊かな風味を持ちます。<br>
+                        　ジャマイカではコーヒーの生産を支援するため1948年にコーヒー産業公社(CIB)という組織が設立されており、ブルーマウンテンはこのCIBの推進によってブランド化されました。ブルーマウンテンの厳格な基準はこのCIBが規定しており、現在もその後継の組織であるJACRAが品質維持の活動を続けています。 
+                    </div>
+                </div>
+
+                <div class="main_topic">
+                    <h1 id="topic3" >ブルーマウンテンの味わい</h1>
+                </div>
+                <div class="js-fade">
+                    <div class="text_content">
+                        　高級豆であるブルーマウンテンの良さは、なんといってもその味のバランス。上品な口当たりで、軽いコク、「苦味」「酸味」「甘み」のバランスが非常に優れており、繊細な味わいです。また香りも抜群で、「コーヒーの王様」という呼び名にふさわしい、コーヒーの王道的な風味を持っています。苦味が強くなく飲みやすいため、コーヒー初心者にもおすすめとされています。<br>
+                        　飲まれ方は等級によって少し異なります。最高評価である「No.1」は、その品質を損なわないようにストレートで飲まれることが主です。他の豆を一切ブレンドせず一種の豆だけを用いるストレートは、最高級の豆を最大限楽しむためにはうってつけの飲み方です。最高評価でない等級ではブレンドの材料としてよく用いられます。その芳醇な香りを生かすため、香りの弱い品種と組み合わせることが一般的です。
+                    </div>
+                </div>
+
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <div class="slide">
+                        <a href="../../CoffeeBeans/Beans_BlueMountain/contents.html">
+                        <img class="slide" src="img/MenuBar/BlueMountain.jpg" width="400" height="266"alt="ブルーマウンテン">
+                        <p class="tag">ブルーマウンテン</p>
+                        <p class="comment">"コーヒーの王様"</p>
+                        </a>
+                    </div>
+                        <div class="slide">
+                        <a href="../../CoffeeBeans/Beans_Colombia/contents.html">
+                        <img class="slide" src="img/MenuBar/Colombia.jpg" width="400" height="266"alt="コロンビア">
+                        <p class="tag">コロンビア</p>
+                        <p class="comment">癖のないバランスの取れた味わい</p>
+                        </a>
+                    </div>
+                        <div class="slide">
+                        <a href="../../CoffeeBeans/Beans_Guatemala/contents.html">
+                        <img class="slide" src="img/MenuBar/Guatemala.jpg" width="400" height="266"alt="グアテマラ">
+                        <p class="tag">グアテマラ</p>
+                        <p class="comment">華やかな酸味と香り、豊かなコク</p>
+                        </a>
+                    </div>
+                        <div class="slide">
+                        <a href="../../CoffeeBeans/Beans_Kilimanjaro/contents.html">
+                        <img class="slide" src="img/MenuBar/Klimanjaro.jpg" width="400" height="266"alt="キリマンジャロ">
+                        <p class="tag">キリマンジャロ</p>
+                        <p class="comment">強い酸味とコク、甘い香り</p>
+                        </a>
+                    </div>
+                        <div class="slide">
+                        <a href="../../CoffeeBeans/Beans_Kona/contents.html">
+                        <img class="slide" src="img/MenuBar/Kona.jpg" width="400" height="266"alt="コナ">
+                        <p class="tag">コナ</p>
+                        <p class="comment">すっきりとしたフルーティな酸味</p>
+                        </a>
+                    </div> 
+                    </div>
+                    <div class="slider-wrapper">
+                        <div class="slide">
+                        <a href="../../CoffeeBeans/Beans_BlueMountain/contents.html">
+                        <img class="slide" src="img/MenuBar/BlueMountain.jpg" width="400" height="266"alt="ブルーマウンテン">
+                        <p class="tag">ブルーマウンテン</p>
+                        <p class="comment">"コーヒーの王様"</p>
+                        </a>
+                    </div>
+                        <div class="slide">
+                        <a href="../../CoffeeBeans/Beans_Colombia/contents.html">
+                        <img class="slide" src="img/MenuBar/Colombia.jpg" width="400" height="266"alt="コロンビア">
+                        <p class="tag">コロンビア</p>
+                        <p class="comment">癖のないバランスの取れた味わい</p>
+                        </a>
+                    </div>
+                        <div class="slide">
+                        <a href="../../CoffeeBeans/Beans_Guatemala/contents.html">
+                        <img class="slide" src="img/MenuBar/Guatemala.jpg" width="400" height="266"alt="グアテマラ">
+                        <p class="tag">グアテマラ</p>
+                        <p class="comment">華やかな酸味と香り、豊かなコク</p>
+                        </a>
+                    </div>
+                        <div class="slide">
+                        <a href="../../CoffeeBeans/Beans_Kilimanjaro/contents.html">
+                        <img class="slide" src="img/MenuBar/Klimanjaro.jpg" width="400" height="266"alt="キリマンジャロ">
+                        <p class="tag">キリマンジャロ</p>
+                        <p class="comment">強い酸味とコク、甘い香り</p>
+                        </a>
+                    </div>
+                        <div class="slide">
+                        <a href="../../CoffeeBeans/Beans_Kona/contents.html">
+                        <img class="slide" src="img/MenuBar/Kona.jpg" width="400" height="266"alt="コナ">
+                        <p class="tag">コナ</p>
+                        <p class="comment">すっきりとしたフルーティな酸味</p>
+                        </a>
+                    </div> 
+                </div>   
+            </div>
+            
+            </div>
+        </div>
+        
+        <nav class="sp-nav">
+            <div class="close-menu" id="js-close-menu">✖</div> <!-- メニューを消すボタン -->
+            <ul>
+                <li><p>MENU</p></li>
+                <li><a href="../../CoffeeBeans/beans_parent.html">豆の種類</a></li>
+                <div class="content">
+                    <li><a href="../../CoffeeBeans/Beans_BlueMountain/contents.html">ブルーマウンテン</a></li>
+                    <li><a href="../../CoffeeBeans/Beans_Colombia/contents.html">コロンビア</a></li>
+                    <li><a href="../../CoffeeBeans/Beans_Guatemala/contents.html">グアテマラ</a></li>
+                    <li><a href="../../CoffeeBeans/Beans_Kilimanjaro/contents.html">キリマンジャロ</a></li>
+                    <li><a href="../../CoffeeBeans/Beans_Kona/contents.html">コナ</a></li>
+                </div>
+                <li><a href="../../CoffeeBrewTop/CoffeeBrewTop.html">淹れ方</a></li>
+                <div class="content">
+                    <li><a href="../../CoffeeBrewTop/Brew_Varieties/contents.html">いろいろな淹れ方</a></li>
+                    <li><a href="../../CoffeeBrewTop/Brew_AtHome/contents.html">お家でできる淹れ方</a></li>
+                </div>
+                <li><a href="../../CoffeeShopTop/CoffeeShopTop.html">カフェ</a></li>
+                <div class="content">
+                    <li><a href="../../CoffeeShopTop/cafe_local/contents.html">一関のカフェ</a></li>
+                    <li><a href="../../CoffeeShopTop/CoffeeShop_Chains/contents.html">チェーン店のコーヒー</a></li>
+                </div>
+            </ul>
+        </nav>
+    <div class="black-bg" id="js-black-bg"></div>
+    </div>
+
+    <div class="footer">
+        <h2>参考文献</h2>
+        <ul>
+            <li><a href="https://www.ucc.co.jp/enjoy/brew/" target="_blank">おいしいコーヒーの淹れ方|知る・楽しむ(UCC上島珈琲　最終訪問日2025/1/23)</a></li>
+            <li><a href="https://www.keycoffee.co.jp/shallwedrip/category/coffeeknowledge/" target="_blank">ドリップしよう。- Shall we drip? - | キーコーヒー株式会社(キーコーヒー　最終訪問日2025/1/23)</a></li>
+            <li><a href="https://coffee-labo.co.jp/" target="_blank">コーヒー豆研究所 | 国内最大級のコーヒー情報サイト(コーヒー豆研究所　最終訪問日2025/1/23)</a></li>
+        </ul>
+    </div>
+    <style>
+    .footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer a:hover {
+        text-decoration: underline;
+    }
+    
+    .footer li{
+        list-style: none;
+    }
+    </style>
+
+</body>
+</html>
+

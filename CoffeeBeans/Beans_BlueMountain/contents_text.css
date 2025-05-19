@@ -1,0 +1,440 @@
+@charset "UTF-8";
+/*img{
+    max-width: 100%;
+}*/
+html {
+    font-size: 16px;
+}
+html {scroll-behavior: smooth;}
+html, body {
+    height: 100%;
+}
+body *, ::before, ::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 400;
+    background-color: #efe8d5;
+    color: #000;
+    z-index:-2;
+    font-size: 1vmax;
+}
+p{
+    font-size: 16px;
+    line-height:1.6;
+}
+h1{
+    font-size: 30px;
+    font-weight: 70;
+}
+h4{
+    margin-top:0px;
+    margin-bottom: 40px;
+    opacity: 0;
+}
+header{
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;left: 0;
+    background-color: rgb(255, 255, 255);
+}
+.header-logo {
+    top: 0;
+    max-height: 65px;
+    width: auto;
+    position: fixed;
+    left: 0;
+    padding: 0 40px;
+}
+.container{
+    margin: 0 ;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 3px ;
+}
+#logo{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 59px;
+    color:#9C9C1F;
+    background: linear-gradient(
+    #542525 0%,
+    #542525 50%,
+    #ffffff 50%,
+    #ffffff 100%
+    );
+}
+#logo p{
+    font-size: 3.5rem;
+    font-weight: 70;
+    font-family: "Ibarra Real Nova", serif;
+    margin-right: 7px;
+}
+.heading{
+    width :90%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 1px;
+    border-left: #5e4949 solid 7px;
+    background-color: #ffffff;
+}
+.text_content{
+    font-family: "M PLUS 1p", serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
+    text-align: left;
+    width: 95%;
+    max-width :750px;
+    font-size: 17px;
+    margin-left:auto;
+    margin-right:auto;
+    padding :10px;
+}
+.heading h1{
+    margin-left: 8px;
+    font-size: 30px;
+    font-weight: 70;
+}
+.table, .list{
+    width :85%;
+    max-width: 800px;
+    display :block;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    margin :auto;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 30px;
+}
+.table h2, .list h2{
+    margin-left: px;
+    font-size: 20px;
+    font-weight: 70;
+}
+.list ul{
+    line-height: 2;
+    text-align: left;
+}
+.table ul{
+    line-height: 2;
+    list-style: none;
+}
+.table li a{
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 17.5px;
+    font-weight: 70;
+    color:#000;
+    transition: 0.3s;
+    display: inline-block;
+}
+.table li a:hover {
+    color:#e38c49;
+    transform: scale(1.1);
+}
+.suggest{
+    font-size: 30px;
+    margin-left: 18%;
+    margin-top: 2rem;
+}
+.main{
+    text-align: left;
+    justify-content: center;
+    margin-bottom: auto;
+}
+.main_topic {
+    width :90%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    border-left: #5e4949 solid 7px;
+}
+.main_topic h1{
+    text-align: left;
+    margin-left: 8px;
+}
+.main div{
+    font-size:17px;
+}
+.main h3 ,.main div{
+    margin-top: 1rem;
+    text-align: left;
+}
+.main img {
+    display: block;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    width: 85%;
+    height: 85%;
+    max-width: 800px;
+    max-height: 800px;
+}
+/* 記事一覧セクションのスタイル */
+.Topminihed {
+    text-align: left;
+    padding: .5em .7em;
+    font-size: 1.3em;
+    border-left: 5px solid #4e1b08;
+}
+
+a{
+    color: #4e1b08;
+}
+
+.articles-section {
+    text-align: center;
+
+}
+
+.articles-title {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #4e1b08;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.article {
+    width: 65%; /* 幅を半分にする */
+    margin: 0 auto; /* 中央に配置 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    background-color: #fafafa96;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: column; /* 画像とテキストを縦に並べる */
+    gap: 20px; /* 画像とテキストの間の空白を一定にする */
+}
+
+.article-content {
+    background-color: #efe8d5; /* カードの背景色を変更 */
+    padding: 20px; 
+    border-radius: 15px; /* カードの角を丸くする */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* カードに影を追加 */
+    flex: 1; 
+}
+
+.articles-section img {
+    width: 40%;
+    height: 30%;
+    max-width: 300px;
+    max-height: 225px;
+    border-radius: 30px;
+    margin-bottom: auto;
+    margin-top: auto;
+    /* 空白の幅を一定にするために追加 */
+}
+
+.article:hover {
+    transform: scale(1.02);
+}
+
+
+.article-description {
+    font-size: 0.8em;
+    margin-bottom: auto;
+    margin-top: auto;
+    font-family: 'M PLUS 1p', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: bold;
+    flex: 1;
+}
+
+.article-button:hover {
+    background-color: #000000;
+}
+
+@media (min-width: 968px) {
+    .article {
+        flex-direction: row-reverse; /* 画面が広い場合は画像を右に配置*/ 
+    }
+
+    .articles-section img {
+        max-width: 40%; /* 画像の幅を調整 */
+        margin-bottom: 0; /* 余白をリセット */
+    }
+}
+
+.js-fade {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: opacity 1s, visibility 1s, transform 1s;
+}
+
+.scroll {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+} 
+/*装飾*/
+/* メニュー */
+.sp-nav {
+    position: fixed;
+    right: -100%;
+    /*ハンバーガーがクリックされる前はWindow右側に隠す*/
+    top: 0;
+    width: 50%;
+    /* 出てくるスライドメニューの幅 */
+    height: 100vh;
+    background-color: #fff;
+    transition: all 0.5s;
+    z-index: 200;
+    overflow-y: auto;
+    /* メニューが多くなったらスクロールできるように */
+    color: rgb(0, 0, 0);
+}
+.sp-nav ul {
+    margin: 0;
+    padding: 25px;
+    list-style: none;
+}
+.sp-nav li a {
+    font-size: 20px;
+    display: block;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #114d60;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.3s;
+}
+.sp-nav li p{
+    font-size: 20px;
+    display: block;
+    text-align: left;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #000000;
+}
+.sp-nav li a:hover  {
+    transform: scale(1.1);
+}
+.content{
+    display: block;
+    text-align:center;
+    margin-left:100px;
+}
+.content li a{
+    font-size: 16px;
+    text-decoration: none;
+}
+.open .sp-nav {
+    right: 0;
+  }
+.black-bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+  cursor: pointer;
+  z-index: 100;
+}
+
+/*ハンバーガーメニューが開いたら表示*/
+.open .black-bg {
+    opacity: 0.3;
+    visibility: visible;
+}
+
+/* ローディングアニメーション */
+.my-custom-loader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 400;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-custom-loader img {
+    width: 100px; /* gif画像のサイズを調整 */
+    height: auto;
+}
+
+
+/* レスポンシブデザインのためのメディアクエリ */
+@media (max-width: 768px) {
+    #logo p{
+        font-size: 2.5rem;
+    }
+    .sp-nav {
+        width: 100%;
+    }
+    .content {
+        margin-left: 0;
+    }
+}
+
+.close-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: black; /* ボタンの色を黒に変更 */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 300; /* 最前面に表示 */
+}
+
+.open .close-menu {
+    display: block;
+}
+
+.js-fade {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: opacity 1s, visibility 1s, transform 1s;
+}
+
+.scroll {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}

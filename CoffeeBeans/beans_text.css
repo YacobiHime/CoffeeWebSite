@@ -1,0 +1,347 @@
+@charset "UTF-8";
+html, body {
+    height: 100%;
+}
+body *, ::before, ::after {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: 400;
+    color: #000;
+    z-index: -2;
+    background-color: #efe8d5; /* 背景色を変更 */
+    font-size: 1vmax;
+}
+header {
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.header-logo {
+    top: 0;
+    max-height: 65px;
+    width: auto;
+    position: fixed;
+    left: 0;
+    padding: 0 40px;
+}
+
+/* 親要素にflexを設定 */
+.container {
+    margin: 0;
+    padding: 20px;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(0, 0, 0);
+    margin: 3px;
+}
+@keyframes horizontal-animation {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.slider-container {
+  display: flex;
+  overflow: hidden;
+  text-align: right;
+}
+
+.slider-wrapper {
+  display: flex;
+  animation: horizontal-animation 30s linear infinite;
+}
+
+.slide {
+  position: relative;
+  width: 400px;
+  margin-right: 20px;
+  cursor: pointer;
+  overflow:hidden;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+  transition: transform 0.4s;
+}
+.slide p{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+}
+.tag{
+    top: 55%;
+    font-size:30px;
+    color: rgb(255, 255, 255);
+    padding:5px;
+    margin-left:10px;
+}
+.comment{
+    top: 75%;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding:5px;
+    margin-left:50px;
+}
+.slide {
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .slide img {
+    transition: transform 0.4s;
+  }
+  .slide:hover img {
+    transform: scale(1.1);
+  }
+@media (hover: hover) {
+  .slider-container:hover .slider-wrapper {
+    animation-play-state: paused;
+  }
+}
+.header {
+    display: column;
+    justify-content: center;
+    align-items: center;
+}
+.header h1{
+    font-size:26px;
+    text-align:center;
+}
+.header p{
+    width:800px;
+    font-size:20px;
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    padding:10px;
+}
+.heading{
+    width :400px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-right:auto;
+    margin-left:5%;
+    padding: 1px;
+    border-left: #5e4949 solid 7px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.heading h2{
+    text-align:left;
+    margin-left: 8px;
+    font-size: 30px;
+    font-weight: 70;
+}
+
+.articles-section {
+    text-align: center;
+    padding: 50px 0;
+    padding: 40px;
+}
+.article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-direction: column; /* 画像とテキストを縦に並べる */
+}
+
+.article-content {
+    background-color: #efe8d5; /* カードの背景色を変更 */
+    padding: 20px; /* カードのパディングを追加 */
+    border-radius: 15px; /* カードの角を丸くする */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* カードに影を追加 */
+}
+
+.article-image {
+    width: 100%; /* 画像を記事の幅に合わせる */
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 30px;
+    margin-bottom: 20px; /* 画像とテキストの間に余白を追加 */
+}
+.article-description {
+    font-size: max(15px);
+    margin-bottom: 5px;
+    font-family: 'M PLUS 1p', sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    line-height:30px;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .article {
+        flex-direction: row; /* 画面が広い場合は横並びに戻す */
+    }
+
+    .article-image {
+        width: 40%; /* 画像の幅を調整 */
+        margin-bottom: 0; /* 余白をリセット */
+    }
+}
+.sp-nav {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #fff;
+    transition: all 0.5s;
+    z-index: 200;
+    overflow-y: auto;
+    color: rgb(0, 0, 0);
+}
+.sp-nav ul {
+    margin: 0;
+    padding: 25px;
+    list-style: none;
+    text-align: left;
+}
+.sp-nav li a {
+    font-size: 20px;
+    display: block;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #114d60;
+    text-decoration: none;
+    color: #000000;
+    transition: 0.3s;
+}
+.sp-nav li p {
+    font-size: 20px;
+    display: block;
+    text-align: left;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #000000;
+}
+.sp-nav li a:hover  {
+    transform: scale(1.1);
+}
+.content {
+    display: block;
+    text-align: center;
+    margin-left: 100px;
+}
+.content li a {
+    font-size: 16px;
+    text-decoration: none;
+}
+#beans_logo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
+    padding:20px;
+}
+#beans_logo p{
+    font-weight: 70px;
+    font-size: 30px;
+    border-bottom: #c56d15 solid 3px;
+    border-top: #c56d15 solid 3px;
+}
+.open .sp-nav {
+    right: 0;
+}
+.black-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 5;
+    background-color: #000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.open .black-bg {
+    opacity: 0.3;
+    visibility: visible;
+}
+
+/* レスポンシブデザインのためのメディアクエリ */
+@media (max-width: 768px) {
+    .sp-nav {
+        width: 100%;
+    }
+    .content {
+        margin-left: 0;
+    }
+}
+
+.close-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: black; /* ボタンの色を黒に変更 */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 300; /* 最前面に表示 */
+}
+
+.open .close-menu {
+    display: block;
+}
+
+/*ローディングアニメーション*/
+.my-custom-loader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 400;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .my-custom-loader img {
+    width: 100px; /* gif画像のサイズを調整 */
+    height: auto;
+}
+.js-fade {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    transition: opacity 1s, visibility 1s, transform 1s;
+}
+.scroll {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0px);
+}
